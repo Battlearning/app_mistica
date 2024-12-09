@@ -1,5 +1,5 @@
 """
-URL configuration for mistica project.
+URL configuration for proyecto_mistica project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
