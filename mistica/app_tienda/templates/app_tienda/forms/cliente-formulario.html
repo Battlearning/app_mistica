@@ -1,0 +1,26 @@
+{% extends 'app_mistica/base.html' %} 
+
+{% block title %}
+Misitca| Formularios
+{% endblock  %}
+
+{% block content %}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            
+
+            <!-- -- formulario con django -->
+
+          <form action="" method="POST">
+          {% csrf_token %}
+
+          {{ form.as_p }}
+          <button type="submit" class="btn btn-primary">Registrar Cliente</button>
+
+        </div>
+    </div>
+</div>
+    
+{% endblock  %}

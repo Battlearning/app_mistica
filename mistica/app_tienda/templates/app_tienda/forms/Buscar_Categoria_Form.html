@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Buscar Categorías
+
+{% endblock %}
+
+{% block content %}
+<h1>Buscar Categorías</h1>
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+</form>
+
+{% if categorias %}
+    <ul>
+        {% for categoria in categorias %}
+        <li>{{ categoria.nombre }}: {{ categoria.descripcion }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
